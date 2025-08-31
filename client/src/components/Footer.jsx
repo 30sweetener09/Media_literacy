@@ -1,7 +1,8 @@
+import './Footer.css';
 const Footer = () => {
   return (
     <footer>
-      <p>&copy; 2025 Media Literacy. All rights reserved.</p>
+      <p className="footer-text">&copy; 2025 Media Literacy. All rights reserved.</p>
     </footer>
   );
 };
