@@ -3,6 +3,7 @@ import DropDownQuiz from './DDQ/DropDownQuiz'
 import FillBlankQuiz from './FBQ/FillBlankQuiz'
 import MultipleChoiceQuiz from './MCQ/MultipleChoicesQuiz';
 
+//ở dưới có ví dụ cho từng loại quiz
 const QuizRenderer = ({ questionData, index, onAnswer }) => {
   switch (questionData.type) {
     case 'fill-blank':
@@ -49,3 +50,52 @@ const QuizSection = ({
     )
 }
 export default QuizSection;
+
+
+/* DropDownQuiz:
+{
+    "id": "q2",
+    "type": "select",
+    "description": "Classify each statement as a fact or an opinion.",
+    "questions": [
+      "It is 0 degrees outside.",
+      "It is too cold outside.",
+      "Water freezes at 0 degrees.",
+      "Ice cream is the best dessert.",
+      "Im the best.",
+    ],
+    "answers": ["Fact", "Opinion"],
+    "correctAnswers": ["Fact", "Opinion", "Fact", "Opinion", "Opinion"],
+    "canTryAgain": true
+  },
+*/
+
+/* FillBlankQuiz:
+{
+    "id": "q3",
+    "type": "fill-blank",
+    "question": "The ___ is the largest planet in the ___ system. The second largest is __, just because.",
+    "correctBlanks": ["Jupiter", "solar", "Saturn"],
+    "correctAnswers": "The Jupiter is the largest planet in the solar system.",
+    "canTryAgain": true
+  },
+  {
+    "id": 'q4',
+    "type": 'fill-blank',
+    "question": 'The capital of France is ___.',
+    "correctBlanks": ['Paris'],
+    "correctAnswers": 'The capital of France is Paris'
+  },
+ */
+
+  /* Multiple Choices Quiz
+  {
+    "id": "q1",
+    "type": "multiple-choice",
+    "question": "Những ngôn ngữ lập trình nào sau đây là ngôn ngữ lập trình hướng đối tượng?",
+    "answers": ["JavaScript", "HTML", "CSS", "Python"],
+    "correctAnswer": ["JavaScript", "Python"],
+    "explanation": "JavaScript và Python đều là ngôn ngữ lập trình hướng đối tượng, trong khi HTML và CSS không phải.",
+    "canTryagain": true
+  },
+  */
