@@ -4,7 +4,13 @@ import MultipleChoiceQuiz from '../../Quiz/MCQ/MultipleChoicesQuiz';
 import Scenario1 from './ScenarioL2/Scenario1';
 import Scenario2 from './ScenarioL2/Scenario2';
 import Scenario3 from './ScenarioL2/Scenario3';
+import FlashCardSection from '../../Cards/FlashCardSection';
 const LessonPage2 = () => {
+
+    const flashcards = [
+        { frontSide: 'What is a Fact?', backSide: 'Something we can check and prove to be true.', id: 1 },
+        { frontSide: 'What is an Opinion?', backSide: 'What someone thinks or feels; it may be different for others.', id: 2 },
+    ];
     return (
         <div className="lesson-page">
             <h1 className="lesson-title">Lesson 2:  Facts and Opinions</h1>
@@ -15,10 +21,11 @@ const LessonPage2 = () => {
             <Scenario1 />
 
             <Scenario2 />
-            
+
             <Scenario3 />
 
-            <h2>Flashcard</h2>
+            <h2>Flashcards for Wrap-Up</h2>
+            <FlashCardSection flashcards={flashcards} index={0} />
 
             <div className="next-lesson">
                 <Link to="/lesson/3">
