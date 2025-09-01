@@ -35,3 +35,10 @@ const FlashCardSection = ({title, flashcards}) => {
     )
 }
 export default FlashCardSection;
+
+/* Ví dụ 
+const flashcards = [
+  { frontSide: '🐶 Dog', backSide: 'Con chó', id: 1 },
+  { frontSide: '🐱 Cat', backSide: 'Con mèo', id: 2 },
+  { frontSide: '🐘 Elephant', backSide: 'Con voi', id: 3 },
+]; */
