@@ -58,3 +58,72 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.submit-button {
+    font-family: "Be Vietnam Pro", sans-serif;
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.submit-button:disabled {
+    background-color: #9E9E9E;
+    cursor: not-allowed;
+}
+.note {
+    font-style: italic;
+    color: #252525;
+    margin-bottom: 10px;
+}
+
+.try-again-button {
+    font-family: "Be Vietnam Pro", sans-serif;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.quiz-section {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 720px;
+    margin: 10px auto;
+    background-color: #F1F1F1;
+}
+.quiz-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px 18px;
+    max-width: 720px;
+    margin: 20px auto;
+    background-color: #F9D696;
+}
+.quiz-title {
+    text-align: center;
+    padding: 8px 15px;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+}
+.quiz-description {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: stretch;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+.quiz-score{
+    margin: 0 auto;
+    padding: 8px 15px;
+    max-width: 200px;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+}
