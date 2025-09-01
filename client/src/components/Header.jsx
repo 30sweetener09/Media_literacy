@@ -1,10 +1,13 @@
 import NavigationBar from "./NaviationBar";
 import './Header.css';
+import MILlogo from '../assets/MIL.png';
 
 const Header = () => {
   return (
     <header>
-      <h1 className="header-title">UML</h1>
+      <div className="logo">
+        <img className="logo-image" src={MILlogo} alt="Logo" />
+      </div>
       <NavigationBar />
     </header>
   );

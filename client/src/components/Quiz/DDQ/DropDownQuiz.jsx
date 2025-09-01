@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './DropDownQuiz.css';
+import './DropDown.css';
 
 const DropDownQuiz = ({
     description, //a description of the quiz
@@ -7,7 +7,7 @@ const DropDownQuiz = ({
     answers,
     correctAnswers, //a list of answers
     onAnswer,
-    index,
+    index = 0,
     canTryAgain = true,
 }) => {
     const note = "Select one answer for each statement"

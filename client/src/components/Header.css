@@ -6,10 +6,16 @@
 }
 
 header {
-  background-color: #144DAD;
+  background-color: #ffffff;
   padding: 0.1rem;
-  text-align: center;
-  display: flex;
+  text-align: left;
+  display: block;
   justify-content: left;
-  align-items: center;  
+  align-items: left;  
+}
+
+.logo-image {
+    height: 60px;
+    width: auto;
+    margin-left: 5rem;
 }

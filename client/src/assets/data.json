@@ -1,0 +1,36 @@
+{
+    "sections": [
+        {
+            "id": 1,
+            "title": "The Basics",
+            "lessons": [
+                {
+                    "id": 1,
+                    "title": "What is Media Literacy?",
+                    "content": "Media literacy is the ability to access, analyze, evaluate, and create media in a variety of forms. It helps individuals understand the complex messages we receive from television, radio, internet, newspapers, and other forms of media."
+                },
+                {
+                    "id": 2,
+                    "title": "The Importance of Media Literacy",
+                    "content": "In today's digital age, media literacy is crucial for navigating the vast amount of information available. It empowers individuals to critically evaluate media messages and make informed decisions."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Critical Thinking and Media",
+            "lessons": [
+                {
+                    "id": 3,
+                    "title": "Analyzing Media Messages",
+                    "content": "This lesson focuses on techniques for analyzing media messages, including identifying the purpose, target audience, and underlying values or biases present in the content."
+                },
+                {
+                    "id": 4,
+                    "title": "Evaluating Sources",
+                    "content": "Learn how to evaluate the credibility of different media sources by examining their authorship, publication date, and potential biases."
+                }
+            ]
+        }
+    ]
+}

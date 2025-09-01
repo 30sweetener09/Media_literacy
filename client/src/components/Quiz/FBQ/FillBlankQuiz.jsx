@@ -8,7 +8,6 @@ const FillBlankQuiz = ({
     canTryAgain = true,
     index = 0
 }) => {
-    const note = 'Fill in the blanks'
     const blanksCount = (question.match(/_{2,}/g) || []).length;
     const [inputValue, setInputValue] = useState(Array(blanksCount).fill(''));
     const [submitted, setSubmitted] = useState(false);
@@ -40,22 +39,22 @@ const FillBlankQuiz = ({
 
     return (
         <div className='quiz-container'>
-            <h3>Question {index + 1}: {note}</h3>
-            <p>{question}</p>
-            <>
+            <h3>Question {index + 1}:</h3>
+            <p className='fillin-question'>{question}</p>
+            <div style={{ display: 'inline-block', marginBottom: '12px' }}>
                 {Array.from({ length: blanksCount }).map((_, i) => {
                     const showIcon = submitted;
                     const correct = correctArray[i];
                     return(
                         <>
-                        <label key={`input-${i}`} style={{ display: 'block', marginBottom: '12px' }}>
+                        <label key={`input-${i}`} style={{ display: 'flex', marginBottom: '12px' }}>
                             {`(${i+1}):`}
                             <input
                                 type='text'
                                 value={inputValue[i]}
                                 onChange={(e) => {handleChange(i, e.target.value)}} 
                                 disabled={submitted}
-                                style={{ marginLeft: '8px', marginRight: '8px'}}
+                                style={{ marginLeft: '8px', marginRight: '8px', width: '140px' }}
                             />
                             {showIcon && (
                                 <span style={{ color: correct ? 'green' : 'red' }}>
@@ -66,18 +65,19 @@ const FillBlankQuiz = ({
                         </>
                     )
                 })}
-            </>
+            </div>
             <hr/>
             {!submitted ? (
             <button 
                 className='submit-button' 
                 onClick={handleSubmit} 
                 disabled={inputValue.includes('')}
+                style={{ width: '100px', height: '36px', margin: '12px' }}
             >
                 Submit
             </button>
             ) : (
-            <div>
+            <div style={{ width: '100px', margin: '0 12px' }}>
                 
                 {(submitted && correctArray.every(Boolean))? (
                     <p className='note'>Correct, You understand the lesson! </p>
